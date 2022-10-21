@@ -2,8 +2,6 @@ import * as React from "react";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Avatar from "@mui/material/Avatar";
 import { Email, Language, Smartphone } from "@mui/icons-material/";
 import { ListItemIcon, Typography } from "@mui/material";
 

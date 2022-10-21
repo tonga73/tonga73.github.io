@@ -8,8 +8,6 @@ import { Workspaces, Work } from "@mui/icons-material";
 import { useData } from "../../app/providers/DataProvider";
 
 import Profile from "../profile/Profile";
-import Contact from "../contact/Contact";
-import BasicTabs from "../tabs/Tabs";
 
 import CustomizedTimeline from "../timeline/Timeline";
 

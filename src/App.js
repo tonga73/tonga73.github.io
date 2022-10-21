@@ -2,10 +2,8 @@ import React from "react";
 import {
   createTheme,
   ThemeProvider,
-  Typography,
   Container,
   CssBaseline,
-  Button,
 } from "@mui/material";
 
 import VirtualCurriculum from "./features/virtualCurriculum/VirtualCurriculum";
