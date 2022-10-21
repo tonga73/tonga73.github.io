@@ -3,11 +3,12 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
-import { Workspaces } from "@mui/icons-material";
+import { Workspaces, Work } from "@mui/icons-material";
 
 import { useData } from "../../app/providers/DataProvider";
 
 import Profile from "../profile/Profile";
+import Contact from "../contact/Contact";
 import BasicTabs from "../tabs/Tabs";
 
 import CustomizedTimeline from "../timeline/Timeline";
@@ -29,13 +30,41 @@ export default function VirtualCurriculum() {
       title: "Skills",
       subtitle: "web design",
       icon: <Workspaces />,
-      stats: data.webDesign,
+      circularStats: data.webDesign,
+      textStats: [],
+      projects: [],
     },
     {
       title: "",
       subtitle: "other tools",
       icon: "",
-      stats: data.otherTools,
+      circularStats: data.otherTools,
+      textStats: [],
+      projects: [],
+    },
+    {
+      title: "",
+      subtitle: "studies",
+      icon: "",
+      circularStats: [],
+      textStats: data.studies,
+      projects: [],
+    },
+    {
+      title: "Projects",
+      subtitle: !!data.projects && data.projects[0].years,
+      icon: <Work />,
+      circularStats: [],
+      textStats: [],
+      projects: !!data.projects && [data.projects[0]],
+    },
+    {
+      title: "",
+      subtitle: !!data.projects && data.projects[1].years,
+      icon: <Work />,
+      circularStats: [],
+      textStats: [],
+      projects: !!data.projects && [data.projects[1]],
     },
   ];
 
@@ -55,7 +84,9 @@ export default function VirtualCurriculum() {
                   title={e.title}
                   subtitle={e.subtitle}
                   icon={e.icon}
-                  stats={e.stats}
+                  circularStats={e.circularStats}
+                  textStats={e.textStats}
+                  projects={e.projects}
                 />
               </Grid>
             );

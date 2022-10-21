@@ -19,10 +19,16 @@ export default function Profile() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Item>
-        <Grid py={3} gap={7} container spacing={2}>
+        <Grid py={3} gap={3} container spacing={2}>
           <Grid display="flex" justifyContent="center" xs={6} md={12}>
             <Avatar
-              sx={{ width: 130, height: 130 }}
+              sx={{
+                width: 150,
+                height: 150,
+                borderWidth: "3px",
+                borderStyle: "solid",
+                borderColor: "#101820",
+              }}
               alt="Gastón Mitoire"
               src="/images/avatar/yo.jpg"
             />
@@ -42,6 +48,9 @@ export default function Profile() {
             </Typography>
           </Grid>
         </Grid>
+      </Item>
+      <Item>
+        <Contact />
       </Item>
     </Box>
   );

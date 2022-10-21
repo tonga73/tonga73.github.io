@@ -4,13 +4,13 @@ import ListItem from "@mui/material/ListItem";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Avatar from "@mui/material/Avatar";
-import { Email, Phone, Web } from "@mui/icons-material/";
-import { ListItemIcon } from "@mui/material";
+import { Email, Language, Smartphone } from "@mui/icons-material/";
+import { ListItemIcon, Typography } from "@mui/material";
 
 const contactList = [
   {
     content: "+54 3754 463051",
-    icon: <Phone />,
+    icon: <Smartphone />,
   },
   {
     content: "gastonmm@gmail.com",
@@ -18,21 +18,45 @@ const contactList = [
   },
   {
     content: "https://tonga73.github.io/",
-    icon: <Web />,
+    icon: <Language />,
   },
 ];
 
 export default function Contact() {
   return (
-    <List sx={{ width: "100%", maxWidth: 360, color: "#101820" }}>
-      {contactList.map((e) => {
-        return (
-          <ListItem>
-            <ListItemText primary={e.content} />
-            <ListItemIcon style={{ color: "#101820" }}>{e.icon}</ListItemIcon>
-          </ListItem>
-        );
-      })}
-    </List>
+    <>
+      <Typography
+        variant="h5"
+        color="secondary"
+        sx={{
+          textTransform: "lowercase",
+          textAlign: "right",
+          textDecoration: "underline",
+          px: 2,
+          mt: 5,
+        }}
+      >
+        Contact
+      </Typography>
+      <List sx={{ width: "100%", color: "#101820" }}>
+        {contactList.map((e, index) => {
+          return (
+            <ListItem
+              button
+              key={index}
+              sx={{
+                textAlign: "right",
+                gap: 1,
+              }}
+            >
+              <ListItemText primary={e.content} />
+              <ListItemIcon sx={{ color: "#101820", minWidth: "auto" }}>
+                {e.icon}
+              </ListItemIcon>
+            </ListItem>
+          );
+        })}
+      </List>
+    </>
   );
 }
