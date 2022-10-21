@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1317f075.css",
-    "main.js": "/static/js/main.12d6218c.js",
+    "main.js": "/static/js/main.a73edaa9.js",
     "static/js/787.223f3107.chunk.js": "/static/js/787.223f3107.chunk.js",
     "static/media/josefin-sans-v25-latin-700italic.svg": "/static/media/josefin-sans-v25-latin-700italic.c87a7d2cc52a8af1b26d.svg",
     "static/media/josefin-sans-v25-latin-italic.svg": "/static/media/josefin-sans-v25-latin-italic.592b843fb37abc65f167.svg",
@@ -45,11 +45,11 @@
     "static/media/josefin-sans-v25-latin-100.woff2": "/static/media/josefin-sans-v25-latin-100.21af9e35dd9620f4cae0.woff2",
     "index.html": "/index.html",
     "main.1317f075.css.map": "/static/css/main.1317f075.css.map",
-    "main.12d6218c.js.map": "/static/js/main.12d6218c.js.map",
+    "main.a73edaa9.js.map": "/static/js/main.a73edaa9.js.map",
     "787.223f3107.chunk.js.map": "/static/js/787.223f3107.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1317f075.css",
-    "static/js/main.12d6218c.js"
+    "static/js/main.a73edaa9.js"
   ]
 }

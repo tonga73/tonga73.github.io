@@ -102,5 +102,33 @@
       "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Kdenlive-logo.svg/512px-Kdenlive-logo.svg.png?20191121211215",
       "level": 25
     }
+  ],
+  "studies": [
+    {
+      "name": "G.H.O.S.T",
+      "years": "2020 - 2021"
+    },
+    {
+      "name": "IT Forensic",
+      "years": "2018 - 2019"
+    },
+    {
+      "name": "Professional Music Interpreter",
+      "years": "2008 - 2015"
+    }
+  ],
+  "projects": [
+    {
+      "years": "present",
+      "description": "book writter web site",
+      "role": "frontend - design",
+      "reference": "hugomitoire.com"
+    },
+    {
+      "years": "2019",
+      "description": "medical system",
+      "role": "ui redesign",
+      "reference": "private system for kinesiology college"
+    }
   ]
 }
