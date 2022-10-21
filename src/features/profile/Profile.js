@@ -20,7 +20,7 @@ export default function Profile() {
     <Box sx={{ flexGrow: 1 }}>
       <Item>
         <Grid py={3} gap={3} container spacing={2}>
-          <Grid display="flex" justifyContent="center" xs={6} md={12}>
+          <Grid display="flex" justifyContent="center" xs={12} md={12}>
             <Avatar
               sx={{
                 width: 150,
@@ -33,7 +33,7 @@ export default function Profile() {
               src="/images/avatar/yo.jpg"
             />
           </Grid>
-          <Grid display="grid" gap={7} xs={6} md={12}>
+          <Grid display="grid" gap={7} xs={12} md={12}>
             <Typography textTransform="uppercase" color="#101820" variant="h4">
               Gastón Mitoire
             </Typography>

@@ -72,7 +72,7 @@ export default function CustomizedTimeline(props) {
             {props.subtitle}
           </Typography>
           {!!props.circularStats && props.circularStats.length > 0 && (
-            <Grid container gap={1} columns={{ xs: 6 }}>
+            <Grid container gap={1} columns={{ xs: "auto", sm: 6 }}>
               {props.circularStats.map((stat, index) => {
                 return (
                   <Grid
@@ -103,12 +103,22 @@ export default function CustomizedTimeline(props) {
                     item
                     xs={12}
                   >
-                    <Typography variant="h5" color="primary">
-                      - {stat.name}
-                    </Typography>
-                    <Typography variant="h6" color="#777">
-                      | {stat.years}
-                    </Typography>
+                    <Grid container gap={1} xs={12}>
+                      <Grid xs={12} md={"auto"} item>
+                        <Typography variant="h5" color="primary">
+                          - {stat.name}
+                        </Typography>
+                      </Grid>
+                      <Grid item>
+                        <Typography
+                          sx={{ pl: { xs: 2 } }}
+                          variant="h6"
+                          color="#777"
+                        >
+                          | {stat.years}
+                        </Typography>
+                      </Grid>
+                    </Grid>
                   </Grid>
                 );
               })}
@@ -120,19 +130,25 @@ export default function CustomizedTimeline(props) {
                 return (
                   <Grid key={index} container gap={1} xs={12}>
                     <Grid display="flex" alignItems="center" gap={1} item>
-                      <Typography
-                        color="#777"
-                        variant="h5"
-                        fontStyle="italic"
-                        sx={{
-                          fontWeight: 300,
-                        }}
-                      >
-                        {e.description}
-                      </Typography>
-                      <Typography variant="h5" color="primary">
-                        | {e.role}
-                      </Typography>
+                      <Grid container gap={1} xs={12} sx={{ padding: 0 }}>
+                        <Grid xs={12} md={"auto"} item>
+                          <Typography
+                            color="#777"
+                            variant="h5"
+                            fontStyle="italic"
+                            sx={{
+                              fontWeight: 300,
+                            }}
+                          >
+                            {e.description}
+                          </Typography>
+                        </Grid>
+                        <Grid sx={{ pl: { xs: 2 } }} item>
+                          <Typography variant="h5" color="primary">
+                            | {e.role}
+                          </Typography>
+                        </Grid>
+                      </Grid>
                     </Grid>
                     <Grid item display="flex" xs={12}>
                       <Typography variant="h4" color="primary">
