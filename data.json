@@ -1,0 +1,106 @@
+{
+  "webDesign": [
+    {
+      "name": "HTML5",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/130px-HTML5_logo_and_wordmark.svg.png",
+      "level": 90
+    },
+    {
+      "name": "GIT",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/480px-Git_icon.svg.png",
+      "level": 60
+    },
+    {
+      "name": "Docker",
+      "img": "https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png",
+      "level": 35
+    },
+    {
+      "name": "NodeJS",
+      "img": "https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png",
+      "level": 35
+    },
+    {
+      "name": "NestJS",
+      "img": "https://d33wubrfki0l68.cloudfront.net/e937e774cbbe23635999615ad5d7732decad182a/26072/logo-small.ede75a6b.svg",
+      "level": 35
+    },
+    {
+      "name": "CSS3",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png?20160530175649",
+      "level": 85
+    },
+    {
+      "name": "SASS",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/512px-Sass_Logo_Color.svg.png?20150315202757",
+      "level": 85
+    },
+    {
+      "name": "Tailwind",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/600px-Tailwind_CSS_Logo.svg.png?20211001194333",
+      "level": 80
+    },
+    {
+      "name": "MUI",
+      "img": "https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png",
+      "level": 70
+    },
+    {
+      "name": "WordPress",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Wordpress-Logo.svg/512px-Wordpress-Logo.svg.png?20210511042647",
+      "level": 60
+    },
+    {
+      "name": "JS",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Javascript-shield.svg/1200px-Javascript-shield.svg.png",
+      "level": 75
+    },
+    {
+      "name": "VueJS",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/512px-Vue.js_Logo_2.svg.png?20170919082558",
+      "level": 75
+    },
+    {
+      "name": "QuasarJS",
+      "img": "https://cdn.quasar.dev/logo-v2/svg/logo.svg",
+      "level": 75
+    },
+    {
+      "name": "ReactJS",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png?20220125121207",
+      "level": 75
+    },
+    {
+      "name": "Redux",
+      "img": "https://cdn.worldvectorlogo.com/logos/redux.svg",
+      "level": 60
+    }
+  ],
+  "otherTools": [
+    {
+      "name": "Linux",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Tux.svg/1200px-Tux.svg.png",
+      "level": 75
+    },
+    {
+      "name": "Inkscape",
+      "img": "https://media.inkscape.org/media/resources/file/inkscape.svg",
+      "level": 75
+    },
+    {
+      "name": "Gimp",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/The_GIMP_icon_-_gnome.svg/316px-The_GIMP_icon_-_gnome.svg.png?20220110174659",
+      "level": 50
+    },
+    {
+      "name": "Blender",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Blender_logo_no_text.svg/120px-Blender_logo_no_text.svg.png",
+      "level": 25
+    },
+    {
+      "name": "Kdenlive",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Kdenlive-logo.svg/512px-Kdenlive-logo.svg.png?20191121211215",
+      "level": 25
+    }
+  ]
+}
