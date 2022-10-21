@@ -1,56 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from "react";
+import {
+  createTheme,
+  ThemeProvider,
+  Typography,
+  Container,
+  CssBaseline,
+  Button,
+} from "@mui/material";
+
+import VirtualCurriculum from "./features/virtualCurriculum/VirtualCurriculum";
+
+const theme = createTheme({
+  palette: {
+    background: {
+      default: "#101820",
+    },
+    primary: {
+      main: "#f2aa4c",
+    },
+    secondary: {
+      main: "#101820",
+    },
+    text: {
+      primary: "#101820",
+      secondary: "#ffffff",
+    },
+  },
+  typography: {
+    fontFamily: [
+      "Josefin Sans",
+      "Nunito",
+      "Roboto",
+      "Helvetica Neue",
+      "Arial",
+      "sans-serif",
+    ].join(","),
+  },
+});
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      className="App"
+    >
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <Container maxWidth="xl">
+          <VirtualCurriculum />
+        </Container>
+      </ThemeProvider>
     </div>
   );
 }
